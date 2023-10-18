@@ -1,25 +1,22 @@
 <template>
-<div class="user-container bg-dark" style="">
-  <div class="user-content" style="display: flex; align-items: center; ">
-    <div class="user-image">
-      <img src="usuario.jpg" alt="Image">
+  <div class="user-container bg-dark" style="">
+    <div class="user-content" style="display: flex; align-items: center">
+      <div class="user-image">
+        <img src="" alt="Image" />
+      </div>
+      <div class="user-details">
+        <h4 class="text-overflow">User</h4>
+      </div>
     </div>
-    <div class="user-details">
-      <h4 class="text-overflow">User</h4>
+    <div class="edit-profile">
+      <font-awesome-icon :icon="['fas', 'user-pen']" class="editProfileIcon" />
     </div>
   </div>
-  <div class="edit-profile">
-    <font-awesome-icon :icon="['fas', 'user-pen']" class="editProfileIcon" />
-  </div>
-</div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style scoped>
-
 .user-container {
   display: flex;
   align-items: center;
@@ -42,10 +39,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.editProfileIcon{
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
+.editProfileIcon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .text-overflow {

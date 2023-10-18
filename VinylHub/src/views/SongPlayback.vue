@@ -1,5 +1,5 @@
 <template>
-   <div id="song-playback">
+  <div id="song-playback">
     <div class="container">
       <div class="main">
         <div class="header">
@@ -12,7 +12,7 @@
         </div>
         <div class="audio-container">
           <audio controls>
-            <source src="ruta-al-archivo-de-audio.mp3" type="audio/mpeg">
+            <source src="" type="audio/mpeg" />
             Tu navegador no soporta la reproducción de audio.
           </audio>
         </div>
@@ -26,92 +26,92 @@
 
 <script>
 export default {
-    name: 'song-playback',
-}
-
+  name: "song-playback",
+};
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Meow+Script&display=swap");
 
 .my-view * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: sans-serif;
-    background: rgba(133, 141, 143, 0.8);
+  font-family: sans-serif;
+  background: rgba(133, 141, 143, 0.8);
 }
 .main {
-    width: 500px;
-    max-width: 100%;
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 20px;
-    background-image: linear-gradient(to left top, rgba(106, 229, 194, 0.8), rgba(0, 0, 255, 0.4));
-    box-shadow: 0px 3px 12px rgba(0,0,0,0.7);
+  width: 500px;
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to left top,
+    rgba(106, 229, 194, 0.8),
+    rgba(0, 0, 255, 0.4)
+  );
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.7);
 }
 
 .header {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
-.song-img{
-    display: block;
-    width: 200px;
-    max-width: 100%;
-    background: bisque;
-    position: relative;
+.song-img {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  background: bisque;
+  position: relative;
 
-    margin: auto;
-    margin-bottom: 30px;
-    border-radius: 50px;
-    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
 
-    background-image: url('../assets/imatge.jpg');
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-
+  background-image: url("../assets/imatge.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
-.song-img::after{
-    content: '';
-    display: block;
-    padding-top: 100%;
+.song-img::after {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
 
-.song-img::before{
-    content: '';
-    display: block;
-    position: absolute;
+.song-img::before {
+  content: "";
+  display: block;
+  position: absolute;
 
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
 }
 
 .song-detail {
-    text-align: center;
-    margin: 30px;
-    
+  text-align: center;
+  margin: 30px;
 }
-.song-detail h2{
-    font-weight: 800;
-    font-size: 20px;
+.song-detail h2 {
+  font-weight: 800;
+  font-size: 20px;
 }
 
-.song-detail h3{
-    font-style: italic;
-    font-weight: 300;
-    font-size: 15px;
+.song-detail h3 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15px;
 }
 
 .audio-container {
@@ -120,17 +120,16 @@ body {
   align-items: center;
   margin-top: 20px;
 }
-.next-up{
-    text-align: center;
-    margin-top: 20px;
+.next-up {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.next-up p{
-    color: white;
+.next-up p {
+  color: white;
 }
 
-.next-up span{
-    font-style: italic;
+.next-up span {
+  font-style: italic;
 }
-
 </style>
